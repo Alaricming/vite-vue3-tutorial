@@ -2,7 +2,7 @@ module.exports = {
   // 解析 .vue 中的 template
   parser: 'vue-eslint-parser',
   parserOptions: {
-    // 原本不存在于
+    // vue 项目中加的属性
     parser: '@typescript-eslint/parser',
     ecmaVersion: 6,
     sourceType: 'module',
@@ -16,14 +16,11 @@ module.exports = {
     'no-var': 'error',
     'no-unused-vars': 'error',
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
-    // 'vue/no-dupe-v-else-if': 'error',
-    // 'vue/script-setup-uses-vars': 'error',
-    // '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
   },
   overrides: [
     {
-      files: ['*.js'],
-      excludedFiles: ['*.test.js'],
+      files: ['*.vue'],
+      excludedFiles: [],
       rules: {
         'no-unused-vars': 'off',
       },

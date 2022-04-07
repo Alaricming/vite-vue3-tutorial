@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-var a = 123
+let a = 123
 function checkValid() {
   console.log('123')
 }

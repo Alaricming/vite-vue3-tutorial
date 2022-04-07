@@ -13,7 +13,6 @@ module.exports = {
   plugins: ['vue', 'prettier'],
   extends: ['plugin:vue/vue3-recommended', 'prettier'],
   rules: {
-    'no-var': 'error',
     'no-unused-vars': 'error',
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },

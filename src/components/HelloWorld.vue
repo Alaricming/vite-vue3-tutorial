@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const emit = defineEmits(["check"])
-const props = defineProps({ aa: String });
+const emit = defineEmits(['check'])
+// const props = defineProps({ aa: String })
 const a = 1
 const b = 1
-console.log(props)
+// console.log(props)
 function handleCheck() {
   emit('check')
 }
@@ -11,8 +11,13 @@ function handleCheck() {
 
 <template>
   <h1 v-if="a == 1">{{ 123 }}</h1>
-  <button v-else-if="a == 2" @click="handleCheck">click</button>
-  <button v-else-if="a == 2" @click="handleCheck">click</button>
+  <button
+    v-else-if="a == 2"
+    style="background-image: url(../assets/logo.png)"
+    @click="handleCheck"
+  >
+    click
+  </button>
 </template>
 
 <style scoped></style>

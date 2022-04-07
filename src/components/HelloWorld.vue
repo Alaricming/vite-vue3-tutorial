@@ -10,14 +10,30 @@ function handleCheck() {
 </script>
 
 <template>
-  <h1 v-if="a == 1">{{ 123 }}</h1>
-  <button
-    v-else-if="a == 2"
-    style="background-image: url(../assets/logo.png)"
-    @click="handleCheck"
-  >
-    click
-  </button>
+  <div class="wrapper">
+    <h1 v-if="a == 1" class="wrapper-h">{{ 123 }}</h1>
+    <button
+      v-else-if="a == 2"
+      style="background-image: url(../assets/logo.png)"
+      @click="handleCheck"
+    >
+      click
+    </button>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+.wrapper {
+    top: 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding-top: 10px;
+
+    .wrapper-h {
+        color: #1234;
+    }
+}
+</style>

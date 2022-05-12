@@ -14,7 +14,7 @@ function handleCheck() {
     <h1 v-if="a == 1" class="wrapper-h">{{ 123 }}</h1>
     <button
       v-else-if="a == 2"
-      style="background-image: url(../assets/logo.png)"
+      style="background-image: url('../assets/logo.png')"
       @click="handleCheck"
     >
       click
@@ -24,16 +24,16 @@ function handleCheck() {
 
 <style scoped lang="scss">
 .wrapper {
-    top: 10px;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    margin-top: 15px;
-    box-sizing: border-box;
-    padding-top: 10px;
+  top: 10px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding-top: 10px;
 
-    .wrapper-h {
-        color: #1234;
-    }
+  .wrapper-h {
+    color: #1234;
+  }
 }
 </style>

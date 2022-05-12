@@ -10,4 +10,9 @@ function checkValid() {
   <HelloWorld @check="checkValid" />
 </template>
 
-<style></style>
+<style>
+.p {
+  height: 1px;
+  width: 100px;
+}
+</style>
